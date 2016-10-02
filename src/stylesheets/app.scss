@@ -1,0 +1,55 @@
+@charset "UTF-8";
+/**
+ * @author: 卓文理
+ * @email : 531840344@qq.com
+ * @desc  : Description
+ */
+
+@import "./common";
+@import "~sass-core/core/reset";
+@import "~material-design-iconfonts/material-icons.css";
+
+html{
+    font-family: 'Helvetica Neue',      // OSX，English
+                 'Helvetica',
+                 "PingFang SC",         // OSX，苹方（华康信凭黑）
+                 "Hiragino Sans GB",    // OSX，冬青黑体
+                 'STHeitiSC-Light',     // OSX，华文黑体
+                 "Source Han Sans CN",  // 思源黑体
+                 "Source Han Sans SC",  // 思源黑体
+                 'Microsoft YaHei',     // Win，微软雅黑
+                 'WenQuanYi Micro Hei', // Linux，文泉驿微米黑
+                 'Arial',               // Win
+                 sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+}
+
+*, *:before, *:after{
+    outline: 0;
+    -webkit-tap-highlight-color: transparent;
+    @include box-sizing;
+}
+
+.container{
+    display: block;
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.material-icons{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    line-height: normal;
+}
+
+.flex{
+    @include display-flex;
+    &__item{
+        display: block;
+        @include flex(1);
+    }
+}
