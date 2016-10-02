@@ -38,6 +38,6 @@
 
     .side-nav{
         width: 250px;
-        margin-right: 20px;
+        @include user-select(none);
     }
 </style>

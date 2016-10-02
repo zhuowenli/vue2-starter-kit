@@ -4,7 +4,7 @@
         main.main
             .container.flex
                 side-nav
-                router-view.flex__item
+                router-view.page.flex__item
         main-footer
 </template>
 

@@ -15,6 +15,7 @@
     .header{
         height: 80px;
         background: $blue;
+        @include user-select(none);
         h1{
             line-height: 80px;
             font-size: 32px;
@@ -34,7 +35,8 @@
                 opacity: .8;
                 color: #fff;
                 font-size: 16px;
-                &.is-active{
+                @include transition(opacity 0.1s ease-in-out);
+                &.is-active, &:hover{
                     opacity: 1;
                 }
             }
