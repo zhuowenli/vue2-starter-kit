@@ -33,7 +33,7 @@
             line-height: 1;
             font-size: 12px;
             color: $gray;
-            @include transition(opacity 0.1s ease-in-out);
+            @include transition(color 0.1s ease-in-out);
             &:hover{
                 color: #fff;
             }
@@ -43,13 +43,13 @@
             line-height: 120px;
             a{
                 color: $gray;
-                @include transition(opacity 0.1s ease-in-out);
+                @include transition(color 0.1s ease-in-out);
                 &:hover{
                     color: #fff;
                 }
             }
             .material-icons{
-                font-size: 32px;
+                font-size: 48px;
             }
         }
     }
